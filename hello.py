@@ -1,12 +1,11 @@
-#largest of the three numbers without using max()
+# Sum of numbers 1 to N without using sum()
 
-a = int(input("Enter number1: "))
-b = int(input("Enter number2: "))
-c = int(input("Enter number3: "))
+def addn(n):
+    if n < 1:
+        return 0
+    else:
+        return n + addn(n - 1)
 
-if (a>b and a>c):
-    print("Greatest number is",a)
-elif(b>a and b>c):
-    print("Greatest number is",b)
-else:
-    print("Greatest number is",c)
+
+print(addn(8))
+print(addn(5))
