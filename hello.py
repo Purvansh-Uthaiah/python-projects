@@ -1,11 +1,12 @@
-# Sum of numbers 1 to N without using sum()
+#Login system
+username =  "Purvansh_Uthaiah"
+password = "purva@123"
 
-def addn(n):
-    if n < 1:
-        return 0
-    else:
-        return n + addn(n - 1)
+Username = input("Enter Username: ")
+Password = input("Enter Password: ")
 
+if (Username == username and Password == password ):
+    print("Access to the system granted")
 
-print(addn(8))
-print(addn(5))
+else:
+    print("Wrong credentials ! Try again")
