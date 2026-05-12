@@ -7,7 +7,7 @@ url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}
 
 r = requests.get(url)
 data = r.json()
-print(f"City:{data[' name']}")
+print(f"City:{data['city']}")
 print(f"Temperature:{data['main']['temp']}°C")
 print(f"Feels Like:{data['main']['feels_like']}°C")
 print(f"Humidity:{data['main']['humidity']}%")
